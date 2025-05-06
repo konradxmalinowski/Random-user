@@ -1,43 +1,119 @@
-# Random User
+# 👤 Random User
 
-## Opis aplikacji
+🎯 **Aplikacja "Random User"** to prosta i nowoczesna aplikacja React wyświetlająca dane losowego użytkownika.  
+Zbudowana z wykorzystaniem **React** i **Vite**, zapewnia szybkie działanie i responsywny design. 💻✨
 
-Aplikacja "Random User" to prosta aplikacja webowa służąca do wyświetlania danych losowego użytkownika. Wykorzystuje nowoczesne technologie front-endowe, takie jak HTML, CSS oraz JavaScript, aby zapewnić dynamiczny i responsywny interfejs.
+---
 
-### Funkcje
-- Wyświetlanie losowego użytkownika, w tym jego:
-  - Zdjęcia profilowego.
-  - Imienia i nazwiska.
-  - Adresu e-mail.
-- Responsywny design dostosowujący się do różnych rozmiarów ekranu.
+## 📚 Funkcje
 
-### Struktura plików
-- **index.html**: Główny plik HTML odpowiedzialny za strukturę dokumentu. Zawiera kontener `#root` dla dynamicznej zawartości aplikacji.
-- **style.css**: Arkusz stylów odpowiadający za wygląd aplikacji, w tym kolorystykę, układ elementów oraz responsywność.
-- **app.js**: Skrypt JavaScript odpowiedzialny za logikę aplikacji, w tym pobieranie danych użytkownika oraz ich dynamiczne wyświetlanie w interfejsie.
+- ✔️ Wyświetlanie losowego użytkownika, w tym:
+  - 📸 Zdjęcia profilowego,
+  - 📝 Imienia i nazwiska,
+  - 📧 Adresu e-mail.
+- ✔️ Dynamiczna aktualizacja danych po kliknięciu przycisku.
+- ✔️ Responsywny design dostosowany do różnych urządzeń. 📱💻  
+- ✔️ Nowoczesna stylistyka z motywem "dark mode". 🌙
 
-### Technologie
-- **HTML**: Definicja struktury aplikacji.
-- **CSS**: Personalizacja wyglądu aplikacji z użyciem zmiennych CSS i responsywnego projektowania.
-- **JavaScript**: Logika aplikacji, w tym obsługa dynamicznych danych oraz integracja z zewnętrznymi API (np. do pobierania losowych użytkowników).
+---
 
-### Działanie
-1. Po otwarciu strony, aplikacja ładuje dane losowego użytkownika.
-2. Dane są wyświetlane w centralnym obszarze aplikacji (zdjęcie, imię, nazwisko, e-mail).
-3. Interfejs dostosowuje się automatycznie do wielkości ekranu urządzenia użytkownika.
+## 🚀 Jak uruchomić projekt?
 
-### Stylizacja
-Stylizacja opiera się na ciemnej kolorystyce (dark mode) z akcentami w kolorach miętowych, co nadaje aplikacji nowoczesny wygląd. Elementy takie jak przyciski mają animowane efekty aktywacji, a układ dopasowuje się do mniejszych ekranów dzięki zastosowaniu media queries.
+1. **Sklonuj repozytorium**:  
+   ```bash
+   git clone https://github.com/konradxmalinowski/Random-user.git
+   ```
 
-### Przykładowe funkcje CSS
-- **Zmienna CSS**: `--clr-primary-300` definiuje kolor tekstu o zmniejszonej przejrzystości.
-- **Media Queries**: Stylizacja dla ekranów o szerokości poniżej 400px, np. zmiana układu kontenera `main` na kolumnowy.
+2. **Przejdź do katalogu projektu**:  
+   ```bash
+   cd Random-user
+   ```
 
-### Jak uruchomić
-1. Pobierz pliki aplikacji.
-2. Otwórz plik `index.html` w przeglądarce.
-3. Aplikacja automatycznie załaduje dane losowego użytkownika.
+3. **Zainstaluj zależności**:  
+   ```bash
+   npm install
+   ```
 
-### Wymagania
-- Przeglądarka obsługująca ES6 (np. Google Chrome, Firefox, Edge).
-- Połączenie z internetem, jeśli aplikacja korzysta z zewnętrznych API.
+4. **Uruchom serwer deweloperski za pomocą Vite**:  
+   ```bash
+   npm run dev
+   ```
+
+5. **Otwórz przeglądarkę** i przejdź do adresu podanego przez Vite (domyślnie `http://localhost:5173`).
+
+---
+
+## 🛠 Technologie
+
+- **React** – Biblioteka do tworzenia interfejsów użytkownika.  
+- **Vite** – Narzędzie do szybkiego budowania i uruchamiania aplikacji.  
+- **CSS** – Personalizacja wyglądu aplikacji. 🎨  
+- **JavaScript** – Logika aplikacji i obsługa API.  
+
+---
+
+## 📁 Struktura projektu
+
+```
+Random-user/
+├── public/             # Statyczne zasoby (np. favicon)
+├── src/                # Główne źródła aplikacji
+│   ├── components/     # Komponenty React
+│   ├── App.jsx         # Główny komponent aplikacji
+│   └── index.jsx       # Punkt wejścia aplikacji
+├── package.json        # Lista zależności i skrypty
+├── vite.config.js      # Konfiguracja Vite
+└── README.md           # Dokumentacja projektu
+```
+
+---
+
+## 🤝 Współpraca
+
+Chcesz pomóc w rozwoju projektu? Świetnie! 🚀
+
+1. **Forkuj repozytorium**.  
+2. Stwórz nową gałąź dla swojej funkcji:  
+   ```bash
+   git checkout -b feature/nazwa-funkcji
+   ```
+
+3. Wprowadź zmiany i zgłoś **pull request**. 🎉
+
+---
+
+## 💬 Kontakt
+
+Masz pytania lub sugestie? Skontaktuj się ze mną:
+
+📧 GitHub: [@konradxmalinowski](https://github.com/konradxmalinowski)  
+
+---
+
+## 📄 Licencja
+
+Projekt jest licencjonowany na zasadach licencji MIT. Szczegóły znajdziesz poniżej:
+
+```
+MIT License
+
+Copyright (c) 2025 Konrad Malinowski
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
