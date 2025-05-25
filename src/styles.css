@@ -1,0 +1,27 @@
+@import 'tailwindcss';
+
+@layer base {
+  * {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: content-box;
+  }
+}
+
+@theme {
+  --color-purple1: #3a6eff;
+  --color-purple2: #2b52c2;
+  --color-purple3: #3a6eff63;
+  --color-white: #f5f5f5;
+
+  --color-background1: #08090a;
+  --color-background2: #0e0f10;
+  --color-background3: #0a0b0c;
+}
+
+body {
+  @apply w-full min-h-[100svh] flex justify-center items-center bg-background1;
+}
+
+#root {
+  @apply w-full min-h-screen flex justify-center items-center;
+}
