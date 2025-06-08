@@ -8,8 +8,6 @@ A simple React application that displays random user information fetched from th
 - Responsive and modern UI styled with Tailwind CSS
 - Easily generate a new user with a single click
 
-## Getting Started
-
 ### Prerequisites
 
 - [Node.js](https://nodejs.org/) (version 18 or newer recommended)
@@ -46,20 +44,7 @@ To build the app for production:
 ```sh
 npm run build
 ```
-
-To preview the production build locally:
-
-```sh
-npm run preview
-```
-
-### Linting
-
-To check for linting errors:
-
-```sh
-npm run lint
-```
+---
 
 ## Project Structure
 
@@ -78,6 +63,17 @@ index.html
 vite.config.ts
 tailwind.config.js
 ```
+
+---
+
+
+## Contact
+
+If you have any questions, feel free to contact me:
+
+- Email: [malinowski.konrad45@gmail.com](malinowski.konrad45@gmail.com)
+
+---
 
 ## License
 
