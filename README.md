@@ -44,7 +44,7 @@ To build the app for production:
 ```sh
 npm run build
 ```
----
+
 
 ## Project Structure
 
@@ -64,7 +64,7 @@ vite.config.ts
 tailwind.config.js
 ```
 
----
+
 
 
 ## Contact
@@ -73,7 +73,7 @@ If you have any questions, feel free to contact me:
 
 - Email: [malinowski.konrad45@gmail.com](malinowski.konrad45@gmail.com)
 
----
+
 
 ## License
 
