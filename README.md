@@ -46,25 +46,6 @@ npm run build
 ```
 
 
-## Project Structure
-
-```
-src/
-  App.tsx
-  main.tsx
-  styles.css
-  Components/
-    Button.tsx
-    UserUI.tsx
-  store/
-    UserContextProvider.tsx
-public/
-index.html
-vite.config.ts
-tailwind.config.js
-```
-
-
 
 
 ## Contact
