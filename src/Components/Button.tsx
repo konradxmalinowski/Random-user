@@ -5,7 +5,7 @@ const Button = ({
 }: {
   category: string;
   handleClick: () => void;
-  className: string | undefined;
+  className?: string;
 }) => {
   return (
     <button

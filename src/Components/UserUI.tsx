@@ -2,23 +2,24 @@ import { useContext, useState } from 'react';
 import { UserContext } from '../store/UserContextProvider';
 import Button from './Button';
 
-import type { User } from '../store/UserContextProvider';
+const categories = ['Name', 'Phone', 'Street', 'City', 'State'] as const;
 
-const categories = ['Name', 'Phone', 'Street', 'City', 'State'];
+type Category = (typeof categories)[number];
+type UserKey = 'name' | 'phone' | 'street' | 'city' | 'state';
+
+const categoryToKeyMap: Record<Category, UserKey> = {
+  Name: 'name',
+  Phone: 'phone',
+  Street: 'street',
+  City: 'city',
+  State: 'state',
+};
 
 const UserUI = () => {
-  const [selectedItem, setSelectedItem] = useState<string>('Name');
+  const [selectedItem, setSelectedItem] = useState<Category>('Name');
   const { user } = useContext(UserContext);
 
-  const keyMap: Record<string, keyof User> = {
-    name: 'name',
-    phone: 'phone',
-    street: 'street',
-    city: 'city',
-    state: 'state',
-  };
-
-  const handleClick = (category: string) => {
+  const handleClick = (category: Category) => {
     setSelectedItem(category);
   };
 
@@ -27,9 +28,11 @@ const UserUI = () => {
       category={category}
       key={category}
       handleClick={() => handleClick(category)}
-      className=""
     />
   ));
+
+  const userKey = categoryToKeyMap[selectedItem];
+  const value = user[userKey] ?? '';
 
   return (
     <section className="w-full h-full flex flex-col items-center justify-between">
@@ -38,12 +41,8 @@ const UserUI = () => {
       </div>
       <div className="w-full min-h-28 flex flex-col items-center justify-between gap-2.5">
         <div className="w-full flex flex-col justify-center items-center gap-2.5">
-          <p className="text-gray-500 text-center">
-            My {selectedItem.toLowerCase()} is
-          </p>
-          <span className="font-bold text-4xl text-center">
-            {keyMap[selectedItem.toLowerCase()]}
-          </span>
+          <p className="text-gray-500 text-center">My {userKey} is</p>
+          <span className="font-bold text-4xl text-center">{value}</span>
         </div>
         <div className="w-full flex justify-center gap-2.5 items-center flex-wrap content-center my-5">
           {buttons}
