@@ -2,6 +2,8 @@
 
 A simple React application that displays random user information fetched from the [randomuser.me](https://randomuser.me/) API. Built with Vite, TypeScript, and Tailwind CSS.
 
+<br>
+
 ## Features
 
 - Fetches and displays random user data (name, phone, address, image, etc.)
@@ -45,12 +47,14 @@ To build the app for production:
 npm run build
 ```
 
+<br>
 
+## Screenshots
+![image](https://github.com/user-attachments/assets/7ffb196c-09d8-413e-a0b4-36612cf84e0d)
 
+<br>
 
 ## Contact
 
-If you have any questions, feel free to contact me:
-
-- Email: [malinowski.konrad45@gmail.com](malinowski.konrad45@gmail.com)
+If you have any questions, feel free to contact me: [malinowski.konrad45@gmail.com](malinowski.konrad45@gmail.com)
 
